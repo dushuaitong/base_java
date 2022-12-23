@@ -6,6 +6,9 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author dushuaitong
+ */
 public class Client {
 
     public static void main(String[] args) throws Exception {

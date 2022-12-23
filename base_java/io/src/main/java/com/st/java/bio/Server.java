@@ -17,6 +17,7 @@ public class Server {
         serverSocket.bind(new InetSocketAddress(10034));
         try {
             while (true) {
+                // 此处也可以更换为更好的线程池
                 new Thread(new ServerTask(serverSocket.accept())).start();
             }
         } finally {
