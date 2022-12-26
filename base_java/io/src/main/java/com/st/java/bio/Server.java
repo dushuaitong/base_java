@@ -36,11 +36,15 @@ public class Server {
         public void run() {
             try (ObjectInputStream inputStream = new ObjectInputStream(socket.getInputStream());
                     ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream())) {
+                int i = 0;
                 while (true) {
                     String userName = inputStream.readUTF();
                     System.out.println("接收到客户端message:" + userName);
                     outputStream.writeUTF("hello," + userName);
                     outputStream.flush();
+                    if (i++ > 30) {
+                        break;
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();

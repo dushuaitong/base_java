@@ -21,6 +21,7 @@ public class Client {
             socket.connect(addr);
             outputStream = new ObjectOutputStream(socket.getOutputStream());
             inputStream = new ObjectInputStream(socket.getInputStream());
+            int i = 0;
             while (true) {
                 outputStream.writeUTF("make hello word");
                 outputStream.flush();
@@ -30,6 +31,7 @@ public class Client {
                 System.out.println("接收服务端端message:" + userName);
                 outputStream.writeUTF("hello," + userName);
                 outputStream.flush();
+                if (i++ > 10) { break; }
             }
         } catch (Exception e) {
             e.printStackTrace();
