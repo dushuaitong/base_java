@@ -1,4 +1,4 @@
-package com.st.java.jdbc;
+package com.st.java.springtemplete;
 
 /**
  * @author dushuaitong
