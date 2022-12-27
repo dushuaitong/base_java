@@ -51,7 +51,7 @@ public class NioClient implements Runnable {
         } catch (Exception e) {
             if (key != null){
                 key.cancel();
-                if (key.channel() != null){
+                if (key.channel() != null) {
                     try {
                         key.channel().close();
                     } catch (Exception ex) { }
