@@ -1,8 +1,0 @@
-
-`	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(óÌÄýÿÿÿÿ
-`	java:S112["FDefine and throw a dedicated exception instead of using a generic one.(ÚèûŽøÿÿÿÿ
-[	java:S112c"FDefine and throw a dedicated exception instead of using a generic one.(Ž†’ë
->	java:S1089")Either remove or fill this block of code.(±•å•
-N
-java:S4719Q"9Replace charset name argument with StandardCharsets.UTF_8(Í¬°
-S	java:S106R"9Replace this use of System.out or System.err by a logger.(åê«¯úÿÿÿÿ
